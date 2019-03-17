@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30C82668-E39A-4E4B-82AB-67A7E82C74A1}</ProjectGuid>
+    <RootNamespace>core</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\dbcache\db_cache.cpp" />
+    <ClCompile Include="..\..\src\dbcache\nosql_define.cpp" />
+    <ClCompile Include="..\..\src\dbcache\redis_client.cpp" />
+    <ClCompile Include="..\..\src\encrypt\base64\base64.cpp" />
+    <ClCompile Include="..\..\src\modul\DataSrcBaseObj.cpp" />
+    <ClCompile Include="..\..\src\modul\DataSrcManage.cpp" />
+    <ClCompile Include="..\..\src\modul\ModBaseObj.cpp" />
+    <ClCompile Include="..\..\src\modul\ModManage.cpp" />
+    <ClCompile Include="..\..\src\serialize\json_config.cpp" />
+    <ClCompile Include="..\..\src\serialize\xmlParse.cpp" />
+    <ClCompile Include="..\..\src\service\logic_base.cpp" />
+    <ClCompile Include="..\..\src\service\logic_obj.cpp" />
+    <ClCompile Include="..\..\src\service\msg_transform.cpp" />
+    <ClCompile Include="..\..\src\service\server_status.cpp" />
+    <ClCompile Include="..\..\src\service\service.cpp" />
+    <ClCompile Include="..\..\src\utils\rtti\class.cpp" />
+    <ClCompile Include="..\..\src\platform\com_func.cpp" />
+    <ClCompile Include="..\..\src\compress\zlib\compress.cpp" />
+    <ClCompile Include="..\..\src\thread\condSigal.cpp" />
+    <ClCompile Include="..\..\src\sql\connPool.cpp" />
+    <ClCompile Include="..\..\src\utils\convert_code\convEncode.cpp" />
+    <ClCompile Include="..\..\src\utils\ini\convertUTF.c" />
+    <ClCompile Include="..\..\src\encrypt\crc\crc32.cpp" />
+    <ClCompile Include="..\..\src\encrypt\des\des.cpp" />
+    <ClCompile Include="..\..\src\serialize\easyStrParse.cpp" />
+    <ClCompile Include="..\..\src\encrypt\des\encdec.cpp" />
+    <ClCompile Include="..\..\src\utils\filter\fileter.cpp" />
+    <ClCompile Include="..\..\src\mem\frameallocator.cpp" />
+    <ClCompile Include="..\..\src\define\initGlobal.cpp" />
+    <ClCompile Include="..\..\src\mem\lookaside_alloc.cpp" />
+    <ClCompile Include="..\..\src\mem\loopBuf.cpp" />
+    <ClCompile Include="..\..\src\script\luabind_base.cpp" />
+    <ClCompile Include="..\..\src\encrypt\md5\md5.cpp" />
+    <ClCompile Include="..\..\src\encrypt\md5\md5ex.cpp" />
+    <ClCompile Include="..\..\src\serialize\msgpack.cpp" />
+    <ClCompile Include="..\..\src\sql\mysqlDBConnPool.cpp" />
+    <ClCompile Include="..\..\src\logging\filelog\output.cpp" />
+    <ClCompile Include="..\..\src\platform\p_linux.cpp" />
+    <ClCompile Include="..\..\src\platform\p_win.cpp" />
+    <ClCompile Include="..\..\src\mem\qmemory.cpp" />
+    <ClCompile Include="..\..\src\logging\syslog\qsyslog.cpp" />
+    <ClCompile Include="..\..\src\thread\qthread.cpp" />
+    <ClCompile Include="..\..\src\utils\rtti\reflect.cpp" />
+    <ClCompile Include="..\..\src\sql\rttiSqlHelper.cpp" />
+    <ClCompile Include="..\..\src\utils\ini\simpleIniManage.cpp" />
+    <ClCompile Include="..\..\src\sql\sqlHelper.cpp" />
+    <ClCompile Include="..\..\src\sql\sqltool.cpp" />
+    <ClCompile Include="..\..\src\mem\streamqueue.cpp" />
+    <ClCompile Include="..\..\src\utils\string\stringex.cpp" />
+    <ClCompile Include="..\..\src\mem\synclist.cpp" />
+    <ClCompile Include="..\..\src\net\tcp\tcp_client.cpp" />
+    <ClCompile Include="..\..\src\net\tcp\tcp_link.cpp" />
+    <ClCompile Include="..\..\src\net\tcp\tcp_manager.cpp" />
+    <ClCompile Include="..\..\src\net\tcp\tcp_server.cpp" />
+    <ClCompile Include="..\..\src\utils\rtti\type.cpp" />
+    <ClCompile Include="..\..\src\net\tcp\uv_ex.cpp" />
+    <ClCompile Include="..\..\src\net\tcp\uv_timer.cpp" />
+    <ClCompile Include="..\..\src\logging\filelog\winFileio.cpp" />
+    <ClCompile Include="..\..\src\logging\logging\zLogger.cpp" />
+    <ClCompile Include="..\..\src\utils\time\timeex.cpp" />
+    <ClCompile Include="..\..\src\utils\time\TimeManage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\publish\include\dbcache\db_cache.h" />
+    <ClInclude Include="..\..\publish\include\dbcache\nosql_define.h" />
+    <ClInclude Include="..\..\publish\include\dbcache\redis_client.h" />
+    <ClInclude Include="..\..\publish\include\dbcache\singleton.h" />
+    <ClInclude Include="..\..\publish\include\modul\DataSrcBaseObj.h" />
+    <ClInclude Include="..\..\publish\include\modul\DataSrcManage.h" />
+    <ClInclude Include="..\..\publish\include\modul\ModBaseObj.h" />
+    <ClInclude Include="..\..\publish\include\modul\ModManage.h" />
+    <ClInclude Include="..\..\publish\include\serialize\JsonBase.h" />
+    <ClInclude Include="..\..\publish\include\serialize\json_config.h" />
+    <ClInclude Include="..\..\publish\include\serialize\xmlParse.h" />
+    <ClInclude Include="..\..\publish\include\service\logic_base.h" />
+    <ClInclude Include="..\..\publish\include\service\logic_obj.h" />
+    <ClInclude Include="..\..\publish\include\service\msg_transform.h" />
+    <ClInclude Include="..\..\publish\include\service\server_status.h" />
+    <ClInclude Include="..\..\publish\include\service\service.h" />
+    <ClInclude Include="..\..\publish\include\utils\atomic.h" />
+    <ClInclude Include="..\..\publish\include\encrypt\base64\base64.h" />
+    <ClInclude Include="..\..\publish\include\serialize\cmdparse.h" />
+    <ClInclude Include="..\..\publish\include\define\common.h" />
+    <ClInclude Include="..\..\publish\include\compress\zlib\compress.h" />
+    <ClInclude Include="..\..\publish\include\thread\condSigal.h" />
+    <ClInclude Include="..\..\publish\include\sql\connPool.h" />
+    <ClInclude Include="..\..\publish\include\utils\convert_code\convEncode.h" />
+    <ClInclude Include="..\..\publish\include\utils\ini\convertUTF.h" />
+    <ClInclude Include="..\..\publish\include\encrypt\crc\crc32.h" />
+    <ClInclude Include="..\..\publish\include\define\define.h" />
+    <ClInclude Include="..\..\publish\include\encrypt\des\des.h" />
+    <ClInclude Include="..\..\publish\include\serialize\easyStrParse.h" />
+    <ClInclude Include="..\..\publish\include\encrypt\des\encdec.h" />
+    <ClInclude Include="..\..\publish\include\utils\filter\fileter.h" />
+    <ClInclude Include="..\..\publish\include\mem\frameallocator.h" />
+    <ClInclude Include="..\..\publish\include\utils\function.h" />
+    <ClInclude Include="..\..\publish\include\utils\hash\hashManage.h" />
+    <ClInclude Include="..\..\publish\include\platform\hashManage_linux.h" />
+    <ClInclude Include="..\..\publish\include\platform\hashManage_win.h" />
+    <ClInclude Include="..\..\publish\include\thread\lockObj.h" />
+    <ClInclude Include="..\..\publish\include\logging\logging\log.h" />
+    <ClInclude Include="..\..\publish\include\mem\lookaside_alloc.h" />
+    <ClInclude Include="..\..\publish\include\mem\loopBuf.h" />
+    <ClInclude Include="..\..\publish\include\script\luabind_base.h" />
+    <ClInclude Include="..\..\publish\include\encrypt\md5\md5.h" />
+    <ClInclude Include="..\..\publish\include\encrypt\md5\md5ex.h" />
+    <ClInclude Include="..\..\publish\include\serialize\msgpack.h" />
+    <ClInclude Include="..\..\publish\include\net\net_sys.h" />
+    <ClInclude Include="..\..\publish\include\define\noncopyable.h" />
+    <ClInclude Include="..\..\publish\include\utils\once_call.h" />
+    <ClInclude Include="..\..\publish\include\logging\filelog\output.h" />
+    <ClInclude Include="..\..\publish\include\platform\p_linux.h" />
+    <ClInclude Include="..\..\publish\include\platform\p_win.h" />
+    <ClInclude Include="..\..\publish\include\serialize\packet.h" />
+    <ClInclude Include="..\..\publish\include\platform\platform.h" />
+    <ClInclude Include="..\..\publish\include\mem\qmemory.h" />
+    <ClInclude Include="..\..\publish\include\thread\qthr_sync.h" />
+    <ClInclude Include="..\..\publish\include\thread\qthread.h" />
+    <ClInclude Include="..\..\publish\include\sql\rttiSqlHelper.h" />
+    <ClInclude Include="..\..\publish\include\utils\ini\simpleIni.h" />
+    <ClInclude Include="..\..\publish\include\utils\ini\simpleIniManage.h" />
+    <ClInclude Include="..\..\publish\include\utils\smart_ptr.h" />
+    <ClInclude Include="..\..\publish\include\sql\sqlDataDefine.h" />
+    <ClInclude Include="..\..\publish\include\sql\sqlHelper.h" />
+    <ClInclude Include="..\..\publish\include\sql\sqltool.h" />
+    <ClInclude Include="..\..\publish\include\mem\stack_alloc.h" />
+    <ClInclude Include="..\..\publish\include\mem\stlport_stack_alloc.h" />
+    <ClInclude Include="..\..\publish\include\mem\streamqueue.h" />
+    <ClInclude Include="..\..\publish\include\utils\string\stringex.h" />
+    <ClInclude Include="..\..\publish\include\mem\synclist.h" />
+    <ClInclude Include="..\..\publish\include\net\tcp\tcp_client.h" />
+    <ClInclude Include="..\..\publish\include\net\tcp\tcp_link.h" />
+    <ClInclude Include="..\..\publish\include\net\tcp\tcp_manager.h" />
+    <ClInclude Include="..\..\publish\include\net\tcp\tcp_server.h" />
+    <ClInclude Include="..\..\publish\include\utils\rtti\type.h" />
+    <ClInclude Include="..\..\publish\include\utils\time\timeex.h" />
+    <ClInclude Include="..\..\publish\include\utils\time\TimeManage.h" />
+    <ClInclude Include="..\..\publish\include\utils\time\zTime.h" />
+    <ClInclude Include="..\..\publish\include\utils\unordered.h" />
+    <ClInclude Include="..\..\publish\include\net\tcp\uv_ex.h" />
+    <ClInclude Include="..\..\publish\include\thread\uv_thread.h" />
+    <ClInclude Include="..\..\publish\include\net\tcp\uv_timer.h" />
+    <ClInclude Include="..\..\publish\include\utils\ini\winapiini.h" />
+    <ClInclude Include="..\..\publish\include\logging\filelog\winFileio.h" />
+    <ClInclude Include="..\..\publish\include\logging\logging\zLogger.h" />
+    <ClInclude Include="..\..\publish\include\mem\zoperatornew.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

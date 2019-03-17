@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="service">
+      <UniqueIdentifier>{09e63924-7202-4f90-baab-ca9362381aeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="servive_h">
+      <UniqueIdentifier>{76719749-61fb-4b62-a62c-a05ad11d15d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbcache">
+      <UniqueIdentifier>{17088411-d216-4419-8bbf-255a3cbf2bfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dbcache_h">
+      <UniqueIdentifier>{b3992dca-4494-4fe3-87c3-f5a89a0a4ab0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serialize">
+      <UniqueIdentifier>{84942d07-e47c-4449-9e10-9f0f4548698d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serialize_h">
+      <UniqueIdentifier>{32b5e19e-05c5-4b9a-bcd0-dfeac147109a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{690af4b9-4710-4df1-9403-88ab0e8f50e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils_h">
+      <UniqueIdentifier>{31ff9c54-ac54-4767-b6df-f03ff68aeb89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils_h\time_h">
+      <UniqueIdentifier>{53dd574d-52f7-44a5-a6c1-78fec18b54f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\time">
+      <UniqueIdentifier>{b6efd1ab-192c-42fe-b9e6-d6b972b88482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modul">
+      <UniqueIdentifier>{23d9409b-b402-4893-89f8-1619f07382bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modul_h">
+      <UniqueIdentifier>{36adfdcd-4dd8-4d4f-9ea7-b1dba67fcf93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\encrypt\base64\base64.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\rtti\class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\com_func.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\compress\zlib\compress.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\thread\condSigal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sql\connPool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\convert_code\convEncode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\ini\convertUTF.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\encrypt\crc\crc32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\encrypt\des\des.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\encrypt\des\encdec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\filter\fileter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mem\frameallocator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\define\initGlobal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mem\lookaside_alloc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mem\loopBuf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\script\luabind_base.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\encrypt\md5\md5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\encrypt\md5\md5ex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sql\mysqlDBConnPool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\filelog\output.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\p_linux.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\p_win.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mem\qmemory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\syslog\qsyslog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\thread\qthread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\rtti\reflect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sql\rttiSqlHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\ini\simpleIniManage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sql\sqlHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sql\sqltool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mem\streamqueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\string\stringex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\mem\synclist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\tcp\tcp_client.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\tcp\tcp_link.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\tcp\tcp_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\tcp\tcp_server.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\rtti\type.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\tcp\uv_ex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\net\tcp\uv_timer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\filelog\winFileio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\logging\logging\zLogger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\service\logic_base.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\service\logic_obj.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\service\msg_transform.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\service\server_status.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\service\service.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dbcache\db_cache.cpp">
+      <Filter>dbcache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dbcache\nosql_define.cpp">
+      <Filter>dbcache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\dbcache\redis_client.cpp">
+      <Filter>dbcache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\serialize\json_config.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\serialize\easyStrParse.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\serialize\msgpack.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\serialize\xmlParse.cpp">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\time\timeex.cpp">
+      <Filter>utils\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\utils\time\TimeManage.cpp">
+      <Filter>utils\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modul\DataSrcBaseObj.cpp">
+      <Filter>modul</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modul\DataSrcManage.cpp">
+      <Filter>modul</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modul\ModBaseObj.cpp">
+      <Filter>modul</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modul\ModManage.cpp">
+      <Filter>modul</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\publish\include\utils\atomic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\encrypt\base64\base64.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\define\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\compress\zlib\compress.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\thread\condSigal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\sql\connPool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\convert_code\convEncode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\ini\convertUTF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\encrypt\crc\crc32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\define\define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\encrypt\des\des.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\encrypt\des\encdec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\filter\fileter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\mem\frameallocator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\function.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\hash\hashManage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\platform\hashManage_linux.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\platform\hashManage_win.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\thread\lockObj.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\logging\logging\log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\mem\lookaside_alloc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\mem\loopBuf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\script\luabind_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\encrypt\md5\md5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\encrypt\md5\md5ex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\net\net_sys.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\define\noncopyable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\once_call.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\logging\filelog\output.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\platform\p_linux.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\platform\p_win.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\platform\platform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\mem\qmemory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\thread\qthr_sync.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\thread\qthread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\sql\rttiSqlHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\ini\simpleIni.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\ini\simpleIniManage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\smart_ptr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\sql\sqlDataDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\sql\sqlHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\sql\sqltool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\mem\stack_alloc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\mem\stlport_stack_alloc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\mem\streamqueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\string\stringex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\mem\synclist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\net\tcp\tcp_client.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\net\tcp\tcp_link.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\net\tcp\tcp_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\net\tcp\tcp_server.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\rtti\type.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\unordered.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\net\tcp\uv_ex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\thread\uv_thread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\net\tcp\uv_timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\ini\winapiini.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\logging\filelog\winFileio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\logging\logging\zLogger.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\mem\zoperatornew.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\service\logic_base.h">
+      <Filter>servive_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\service\logic_obj.h">
+      <Filter>servive_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\service\msg_transform.h">
+      <Filter>servive_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\service\server_status.h">
+      <Filter>servive_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\service\service.h">
+      <Filter>servive_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\dbcache\db_cache.h">
+      <Filter>dbcache_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\dbcache\nosql_define.h">
+      <Filter>dbcache_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\dbcache\redis_client.h">
+      <Filter>dbcache_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\dbcache\singleton.h">
+      <Filter>dbcache_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\serialize\json_config.h">
+      <Filter>serialize_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\serialize\JsonBase.h">
+      <Filter>serialize_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\serialize\cmdparse.h">
+      <Filter>serialize_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\serialize\easyStrParse.h">
+      <Filter>serialize_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\serialize\msgpack.h">
+      <Filter>serialize_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\serialize\packet.h">
+      <Filter>serialize_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\serialize\xmlParse.h">
+      <Filter>serialize_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\time\TimeManage.h">
+      <Filter>utils_h\time_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\time\timeex.h">
+      <Filter>utils_h\time_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\utils\time\zTime.h">
+      <Filter>utils_h\time_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\modul\DataSrcBaseObj.h">
+      <Filter>modul_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\modul\DataSrcManage.h">
+      <Filter>modul_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\modul\ModBaseObj.h">
+      <Filter>modul_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\publish\include\modul\ModManage.h">
+      <Filter>modul_h</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
